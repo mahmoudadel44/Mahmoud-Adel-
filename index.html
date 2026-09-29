@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahmoud Adel | Frontend Developer (React.js &amp; React Native)</title>
+  <meta name="description"
+    content="Mahmoud Adel - Frontend Developer with 4+ years of experience in React.js and React Native, building responsive web applications and cross-platform mobile solutions." />
+  <meta name="author" content="Mahmoud Adel" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Arial' font-weight='bold' fill='%2300e5ff'>M</text></svg>" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__box">
+      <span class="preloader__logo">MA</span>
+      <div class="preloader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand">
+        <span class="nav__brand-mark">MA</span>
+        <span class="nav__brand-text">Mahmoud<span> Adel</span></span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu">
+        <a href="#home" class="nav__link active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--sm btn--primary" href="https://wa.me/201098337611?text=Hello%20Mahmoud%2C%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20chat."
+          target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Hire Me
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge"><i class="fa-solid fa-circle-dot"></i> Available for new opportunities</span>
+          <h1 class="hero__title">
+            Hi, I'm <span class="gradient-text">Mahmoud Adel</span>
+          </h1>
+          <h2 class="hero__subtitle">
+            <span class="typed" id="typed"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero__text">
+            Frontend Developer with <strong>4+ years</strong> of expertise in React.js and React Native.
+            I build responsive web applications and cross-platform mobile solutions across
+            healthcare, e-commerce and fintech — including banking apps used by millions.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary"><i class="fa-solid fa-layer-group"></i> View My Work</a>
+            <a href="assets/Mahmoud_Adel_CV.pdf" class="btn btn--ghost" download><i class="fa-solid fa-download"></i>
+              Download CV</a>
+            <a href="#contact" class="btn btn--ghost"><i class="fa-regular fa-paper-plane"></i> Let's Talk</a>
+          </div>
+
+          <div class="hero__socials">
+            <span class="hero__socials-label">PROFILES:</span>
+            <a href="https://www.linkedin.com/in/mahmoud-adel-8a7b25191/" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:mrmahmoudadel1996@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+201098337611" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://wa.me/201098337611" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__avatar">
+            <div class="hero__avatar-ring"></div>
+            <div class="hero__avatar-inner">MA</div>
+            <span class="chip chip--1"><i class="fa-brands fa-react"></i> React Native</span>
+            <span class="chip chip--2"><i class="fa-solid fa-code"></i> TypeScript</span>
+            <span class="chip chip--3"><i class="fa-solid fa-mobile-screen"></i> Mobile UI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="stats" data-animate>
+          <div class="stat">
+            <span class="stat__num" data-count="4">0</span><span class="stat__plus">+</span>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="15">0</span><span class="stat__plus">+</span>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="3">0</span>
+            <p>Banking Apps</p>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="5">0</span>
+            <p>Companies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__kicker">GET TO KNOW ME</span>
+          <h2 class="section__title">About <span class="gradient-text">Me</span></h2>
+          <p class="section__sub">Turning designs into fast, accessible and maintainable interfaces.</p>
+        </div>
+
+        <div class="about">
+          <div class="about__card glass" data-animate>
+            <div class="about__profile">
+              <div class="about__avatar">MA</div>
+              <div>
+                <h3>Mahmoud Adel</h3>
+                <p class="about__role">Frontend Developer — React.js &amp; React Native</p>
+              </div>
+            </div>
+            <ul class="about__list">
+              <li><i class="fa-solid fa-location-dot"></i> Cairo, Egypt (Open to Remote)</li>
+              <li><i class="fa-solid fa-graduation-cap"></i> B.Sc. Computer Science — Zagazig University</li>
+              <li><i class="fa-solid fa-envelope"></i> mrmahmoudadel1996@gmail.com</li>
+              <li><i class="fa-solid fa-phone"></i> +20 109 833 7611</li>
+              <li><i class="fa-solid fa-shield-halved"></i> Military Status: Completed</li>
+              <li><i class="fa-solid fa-language"></i> Arabic (Native) · English</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">React.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Redux Toolkit</span>
+              <span class="tag">React Query</span>
+            </div>
+          </div>
+
+          <div class="about__features">
+            <article class="feature glass" data-animate>
+              <div class="feature__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h4>Cross-Platform Mobile Apps</h4>
+              <p>Built production React Native apps for major financial institutions — investment portfolios,
+                real-time market data, transfers and secure transactions on iOS and Android.</p>
+            </article>
+            <article class="feature glass" data-animate>
+              <div class="feature__icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <h4>Scalable State Architecture</h4>
+              <p>Redux, Redux Toolkit, React Query, Context API and custom hooks — structured, predictable
+                data flows that keep large codebases maintainable.</p>
+            </article>
+            <article class="feature glass" data-animate>
+              <div class="feature__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h4>Pixel-Perfect Responsive UI</h4>
+              <p>Translating mockups into responsive, animated interfaces with Tailwind, Sass, Bootstrap,
+                Ant Design and Material UI — optimized for performance.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__kicker">CAREER PATH</span>
+          <h2 class="section__title">Professional <span class="gradient-text">Experience</span></h2>
+          <p class="section__sub">Five years of shipping web and mobile products for fintech, healthcare and
+            recruitment.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="tl-item" data-animate>
+            <span class="tl-dot"></span>
+            <div class="tl-card glass">
+              <div class="tl-head">
+                <div>
+                  <h3>Software Developer</h3>
+                  <p class="tl-company">Ejada <span class="dot">•</span> React.js, React Native</p>
+                </div>
+                <span class="tl-date current">Aug 2022 – Present</span>
+              </div>
+              <p class="tl-place"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+              <ul class="tl-list">
+                <li>Developed and maintained React Native mobile applications for major financial institutions.</li>
+                <li>Collaborated with cross-functional teams to deliver high-quality financial mobile solutions.</li>
+                <li>Implemented responsive designs and optimized application performance for the banking sector.</li>
+              </ul>
+
+              <div class="subprojects">
+                <div class="subproject">
+                  <h5><i class="fa-solid fa-chart-line"></i> AlRajhi Capital Mobile App</h5>
+                  <p>Built a comprehensive financial mobile application from scratch — investment portfolio
+                    management, real-time market data and secure transactions.</p>
+                  <div class="tag-row">
+                    <span class="tag">React Native</span><span class="tag">React Query</span><span
+                      class="tag">TypeScript</span>
+                  </div>
+                  <div class="store-links">
+                    <a href="https://play.google.com/store/search?q=alrajhi%20capital&c=apps" target="_blank"
+                      rel="noopener noreferrer"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                    <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-app-store-ios"></i> App Store</a>
+                  </div>
+                </div>
+
+                <div class="subproject">
+                  <h5><i class="fa-solid fa-building-columns"></i> AlRajhi Bank Retail App</h5>
+                  <p>Enhanced and maintained the consumer banking app — account management, money transfers,
+                    bill payments and mobile banking services.</p>
+                  <div class="tag-row">
+                    <span class="tag">React Native</span><span class="tag">Redux</span><span class="tag">Custom
+                      Hooks</span>
+                  </div>
+                  <div class="store-links">
+                    <a href="https://play.google.com/store/search?q=alrajhi%20bank&c=apps" target="_blank"
+                      rel="noopener noreferrer"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                    <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-app-store-ios"></i> App Store</a>
+                  </div>
+                </div>
+
+                <div class="subproject">
+                  <h5><i class="fa-solid fa-briefcase"></i> AlRajhi Bank Business App</h5>
+                  <p>Delivered an enterprise-grade business banking solution for corporate clients — corporate
+                    account management and bulk transfers.</p>
+                  <div class="tag-row">
+                    <span class="tag">React Native</span><span class="tag">Redux</span><span class="tag">Custom
+                      Components</span>
+                  </div>
+                  <div class="store-links">
+                    <a href="https://play.google.com/store/search?q=alrajhi%20business&c=apps" target="_blank"
+                      rel="noopener noreferrer"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                    <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-app-store-ios"></i> App Store</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item" data-animate>
+            <span class="tl-dot"></span>
+            <div class="tl-card glass">
+              <div class="tl-head">
+                <div>
+                  <h3>Frontend Developer</h3>
+                  <p class="tl-company">Atpvital Solution <span class="dot">•</span> React.js</p>
+                </div>
+                <span class="tl-date">Apr 2021 – Jul 2022</span>
+              </div>
+              <p class="tl-place"><i class="fa-solid fa-globe"></i> Remote</p>
+              <ul class="tl-list">
+                <li>Built responsive web applications using React.js and modern frontend technologies.</li>
+                <li>Developed the NaturalInfinity project with a focus on user experience and performance.</li>
+                <li>Implemented state management solutions using Redux and React Hooks.</li>
+                <li>Collaborated with the design team to translate mockups into functional interfaces.</li>
+              </ul>
+
+              <div class="subprojects">
+                <div class="subproject">
+                  <h5><i class="fa-solid fa-leaf"></i> CELEMI Sustainability</h5>
+                  <p>A sustainability simulation platform helping teams move toward responsible business practices
+                    by balancing profit and sustainability through immersive business simulation games.</p>
+                  <div class="store-links">
+                    <a href="https://www.celemi.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                  </div>
+                </div>
+                <div class="subproject">
+                  <h5><i class="fa-solid fa-bolt"></i> CELEMI Agile Move</h5>
+                  <p>An agile mindset simulation giving teams a shared understanding of agile ways of working —
+                    staying responsive to market changes and improving collaboration.</p>
+                  <div class="store-links">
+                    <a href="https://www.celemi.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item" data-animate>
+            <span class="tl-dot"></span>
+            <div class="tl-card glass">
+              <div class="tl-head">
+                <div>
+                  <h3>Frontend Developer</h3>
+                  <p class="tl-company">Dot.jo Company <span class="dot">•</span> React.js</p>
+                </div>
+                <span class="tl-date">Mar 2021 – Apr 2021</span>
+              </div>
+              <p class="tl-place"><i class="fa-solid fa-globe"></i> Remote</p>
+              <ul class="tl-list">
+                <li>Developed frontend components using React.js and modern JavaScript.</li>
+                <li>Worked on improving user interface and user experience.</li>
+                <li>Participated in agile development processes and daily standups.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item" data-animate>
+            <span class="tl-dot"></span>
+            <div class="tl-card glass">
+              <div class="tl-head">
+                <div>
+                  <h3>Frontend Developer</h3>
+                  <p class="tl-company">Fudex Company <span class="dot">•</span> React.js</p>
+                </div>
+                <span class="tl-date">Oct 2020 – Mar 2021</span>
+              </div>
+              <p class="tl-place"><i class="fa-solid fa-globe"></i> Remote</p>
+              <ul class="tl-list">
+                <li>Developed <strong>Fursatak</strong>, a comprehensive recruitment management &amp; job
+                  application platform using React.js, Redux, Hooks and Ant Design.</li>
+                <li>Implemented a job posting dashboard with real-time status tracking and application monitoring.</li>
+                <li>Built an advanced candidate filtering system (working status, age, gender, nationality,
+                  experience level, graduation date, GPA).</li>
+                <li>Created sorting functionality (new to old, location-based, unread first, with comments first).</li>
+                <li>Developed a job details page with applicant profiles, CV viewer and cover letter management.</li>
+                <li>Integrated RESTful APIs for seamless data flow.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item" data-animate>
+            <span class="tl-dot"></span>
+            <div class="tl-card glass">
+              <div class="tl-head">
+                <div>
+                  <h3>Frontend Developer</h3>
+                  <p class="tl-company">Pulse.doctors <span class="dot">•</span> React.js</p>
+                </div>
+                <span class="tl-date">Jan 2020 – Jun 2020</span>
+              </div>
+              <p class="tl-place"><i class="fa-solid fa-globe"></i> Remote</p>
+              <ul class="tl-list">
+                <li>Developed a healthcare platform enabling patients to book appointments.</li>
+                <li>Built a doctor dashboard for managing bookings, reviews and availability.</li>
+                <li>Implemented real-time messaging and notification systems.</li>
+                <li>Used React.js, Redux, Hooks, Formik and Bootstrap for development.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__kicker">CORE COMPETENCIES</span>
+          <h2 class="section__title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section__sub">The toolset I use daily to design, build and ship products.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass" data-animate>
+            <h4><i class="fa-solid fa-code"></i> Languages &amp; Frameworks</h4>
+            <div class="tag-row">
+              <span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">React.js</span>
+              <span class="tag">Next.js</span><span class="tag">React Native</span><span class="tag">Node.js</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass" data-animate>
+            <h4><i class="fa-solid fa-layer-group"></i> State Management</h4>
+            <div class="tag-row">
+              <span class="tag">Redux</span><span class="tag">Redux Toolkit</span><span class="tag">React Hooks</span>
+              <span class="tag">React Query</span><span class="tag">Context API</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass" data-animate>
+            <h4><i class="fa-solid fa-palette"></i> Styling &amp; UI</h4>
+            <div class="tag-row">
+              <span class="tag">CSS3</span><span class="tag">Sass</span><span class="tag">Bootstrap 5</span>
+              <span class="tag">Tailwind CSS</span><span class="tag">Ant Design</span><span class="tag">Material
+                UI</span>
+              <span class="tag">Chakra UI</span><span class="tag">Reactstrap</span><span class="tag">Animate.css</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass" data-animate>
+            <h4><i class="fa-solid fa-mobile-screen"></i> Mobile Development</h4>
+            <div class="tag-row">
+              <span class="tag">React Native</span><span class="tag">Cross-Platform</span><span class="tag">Mobile
+                UI/UX</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass" data-animate>
+            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Tools &amp; Services</h4>
+            <div class="tag-row">
+              <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Webpack</span>
+              <span class="tag">Firebase</span><span class="tag">MongoDB</span><span class="tag">Express.js</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass" data-animate>
+            <h4><i class="fa-solid fa-clipboard-check"></i> Testing &amp; Validation</h4>
+            <div class="tag-row">
+              <span class="tag">Formik</span><span class="tag">Yup</span><span class="tag">React Hook Form</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass" data-animate>
+            <h4><i class="fa-solid fa-globe"></i> Web Technologies</h4>
+            <div class="tag-row">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">RESTful APIs</span>
+              <span class="tag">JSON</span><span class="tag">Responsive Design</span><span class="tag">CSS Grid</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass" data-animate>
+            <h4><i class="fa-solid fa-cubes"></i> Additional</h4>
+            <div class="tag-row">
+              <span class="tag">OOP</span><span class="tag">DOM / BOM</span><span class="tag">jQuery</span>
+              <span class="tag">FontAwesome</span><span class="tag">Agile / Scrum</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="bars" data-animate>
+          <div class="bar">
+            <div class="bar__top"><span>React.js / Next.js</span><span>95%</span></div>
+            <div class="bar__track"><span class="bar__fill" data-width="95"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar__top"><span>React Native</span><span>92%</span></div>
+            <div class="bar__track"><span class="bar__fill" data-width="92"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar__top"><span>JavaScript / TypeScript</span><span>90%</span></div>
+            <div class="bar__track"><span class="bar__fill" data-width="90"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar__top"><span>Redux / State Management</span><span>90%</span></div>
+            <div class="bar__track"><span class="bar__fill" data-width="90"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar__top"><span>HTML5 / CSS3 / Sass</span><span>95%</span></div>
+            <div class="bar__track"><span class="bar__fill" data-width="95"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar__top"><span>UI Libraries (MUI, Ant, Tailwind)</span><span>88%</span></div>
+            <div class="bar__track"><span class="bar__fill" data-width="88"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__kicker">SELECTED WORK</span>
+          <h2 class="section__title">Notable <span class="gradient-text">Projects</span></h2>
+          <p class="section__sub">Mobile apps, dashboards and web platforms shipped to real users.</p>
+        </div>
+
+        <div class="filters" data-animate>
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="mobile">Mobile</button>
+          <button class="filter" data-filter="web">Web Apps</button>
+          <button class="filter" data-filter="dashboard">Dashboards</button>
+          <button class="filter" data-filter="design">Responsive Design</button>
+        </div>
+
+        <div class="projects" id="projectsGrid">
+          <article class="project glass" data-category="mobile" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-solid fa-list-check"></i></span>
+              <span class="project__label">TASK MANAGEMENT</span>
+            </div>
+            <h3>Checkbee App</h3>
+            <p>Task management and checklist application that lets users create and assign tasks to team members
+              or supervisors, with real-time progress alerts pushed to both watch and phone devices.</p>
+            <div class="tag-row">
+              <span class="tag">React Native</span><span class="tag">Notifications</span><span class="tag">Team
+                Collaboration</span>
+            </div>
+            <a class="project__link" href="https://checkbee.app/" target="_blank" rel="noopener noreferrer">
+              Visit Website <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <article class="project glass" data-category="web" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-solid fa-cart-shopping"></i></span>
+              <span class="project__label">E-COMMERCE</span>
+            </div>
+            <h3>E-commerce App</h3>
+            <p>Full-featured e-commerce application with product filtering, a shopping cart and add/remove item
+              flows — built on Next.js with a Redux-powered store.</p>
+            <div class="tag-row">
+              <span class="tag">Next.js</span><span class="tag">Redux</span><span class="tag">React Hooks</span>
+            </div>
+            <a class="project__link" href="#contact">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="project glass" data-category="dashboard" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-solid fa-chart-pie"></i></span>
+              <span class="project__label">FINTECH DASHBOARD</span>
+            </div>
+            <h3>CFin App</h3>
+            <p>Business financial dashboard that surfaces insights across all of your business financial data in a
+              simple, intuitive interface designed to drive lasting impact.</p>
+            <div class="tag-row">
+              <span class="tag">React.js</span><span class="tag">Dashboard UI</span><span class="tag">Charts</span>
+            </div>
+            <a class="project__link" href="#contact">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="project glass" data-category="web" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-solid fa-stethoscope"></i></span>
+              <span class="project__label">HEALTHCARE</span>
+            </div>
+            <h3>Pulse.doctors Platform</h3>
+            <p>Patient booking system with doctor search and appointment scheduling, plus a doctor dashboard for
+              managing bookings, reviews and availability with real-time updates.</p>
+            <div class="tag-row">
+              <span class="tag">React.js</span><span class="tag">Redux</span><span class="tag">Formik</span>
+              <span class="tag">Bootstrap 4</span>
+            </div>
+            <a class="project__link" href="#contact">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="project glass" data-category="dashboard" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-solid fa-user-tie"></i></span>
+              <span class="project__label">RECRUITMENT</span>
+            </div>
+            <h3>Fursatak</h3>
+            <p>Recruitment management system with job posting dashboards, real-time status tracking, advanced
+              candidate filtering, multi-criteria sorting and an integrated CV viewer.</p>
+            <div class="tag-row">
+              <span class="tag">React.js</span><span class="tag">Redux</span><span class="tag">Ant Design</span>
+              <span class="tag">REST APIs</span>
+            </div>
+            <a class="project__link" href="#contact">Request Details <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="project glass" data-category="mobile" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-solid fa-sack-dollar"></i></span>
+              <span class="project__label">FINTECH MOBILE</span>
+            </div>
+            <h3>AlRajhi Capital</h3>
+            <p>Investment platform built from scratch with React Native — portfolio management, real-time market
+              data and secure transactions for a leading capital markets institution.</p>
+            <div class="tag-row">
+              <span class="tag">React Native</span><span class="tag">React Query</span><span
+                class="tag">TypeScript</span>
+            </div>
+            <a class="project__link" href="https://play.google.com/store/search?q=alrajhi%20capital&c=apps"
+              target="_blank" rel="noopener noreferrer">View on Store <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="project glass" data-category="web" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-brands fa-angular"></i></span>
+              <span class="project__label">LANDING PAGE</span>
+            </div>
+            <h3>LandingPage App</h3>
+            <p>Modern responsive landing page with a clean design and smooth animations, built with Angular and
+              focused on performance and user experience.</p>
+            <div class="tag-row">
+              <span class="tag">Angular</span><span class="tag">TypeScript</span><span class="tag">CSS3</span>
+            </div>
+            <a class="project__link" href="#contact">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="project glass" data-category="design" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-solid fa-swatchbook"></i></span>
+              <span class="project__label">5 TEMPLATES</span>
+            </div>
+            <h3>Responsive Web Designs</h3>
+            <p>A collection of five hand-coded templates: a corporate website, an e-commerce showcase with CSS
+              Grid, an animated portfolio, a multi-page business site and an agency landing page.</p>
+            <div class="tag-row">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Sass</span>
+              <span class="tag">Bootstrap 5</span><span class="tag">CSS Grid</span>
+            </div>
+            <a class="project__link" href="#contact">Live Demos <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="project glass" data-category="web" data-animate>
+            <div class="project__top">
+              <span class="project__icon"><i class="fa-solid fa-seedling"></i></span>
+              <span class="project__label">SIMULATION PLATFORM</span>
+            </div>
+            <h3>CELEMI Sustainability &amp; Agile Move</h3>
+            <p>Business simulation platforms that help teams balance profit with sustainability and adopt an agile
+              mindset through immersive, collaborative learning experiences.</p>
+            <div class="tag-row">
+              <span class="tag">React.js</span><span class="tag">Redux</span><span class="tag">React Hooks</span>
+            </div>
+            <a class="project__link" href="https://www.celemi.com/" target="_blank" rel="noopener noreferrer">
+              Visit Project <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__kicker">ACADEMIC FOUNDATION</span>
+          <h2 class="section__title">Education &amp; <span class="gradient-text">Languages</span></h2>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu-card glass" data-animate>
+            <div class="edu-card__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Bachelor of Computer Science</h3>
+            <p class="edu-card__place">Faculty of Computers and Information — Zagazig University</p>
+            <p>Studies in algorithms, data structures, databases, software engineering principles and web
+              technologies.</p>
+            <span class="tl-date">2014 – 2018</span>
+          </article>
+
+          <article class="edu-card glass" data-animate>
+            <div class="edu-card__icon"><i class="fa-solid fa-language"></i></div>
+            <h3>Languages</h3>
+            <div class="lang">
+              <div class="bar">
+                <div class="bar__top"><span>Arabic</span><span>Native</span></div>
+                <div class="bar__track"><span class="bar__fill" data-width="100"></span></div>
+              </div>
+              <div class="bar">
+                <div class="bar__top"><span>English</span><span>Professional</span></div>
+                <div class="bar__track"><span class="bar__fill" data-width="80"></span></div>
+              </div>
+            </div>
+            <p class="edu-card__place" style="margin-top:1.1rem">
+              <i class="fa-solid fa-shield-halved"></i> Military Status: Completed
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head" data-animate>
+          <span class="section__kicker">LET'S CONNECT</span>
+          <h2 class="section__title">Let's Build Something <span class="gradient-text">Great</span></h2>
+          <p class="section__sub">Open to frontend, React.js and React Native opportunities — full-time or
+            freelance.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__info">
+            <a class="contact__card glass" href="https://wa.me/201098337611" target="_blank" rel="noopener noreferrer"
+              data-animate>
+              <span class="contact__icon whatsapp"><i class="fa-brands fa-whatsapp"></i></span>
+              <div>
+                <h4>WhatsApp (Quick Response)</h4>
+                <p>+20 109 833 7611</p>
+              </div>
+            </a>
+            <a class="contact__card glass" href="mailto:mrmahmoudadel1996@gmail.com" data-animate>
+              <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <h4>Direct Email</h4>
+                <p>mrmahmoudadel1996@gmail.com</p>
+              </div>
+            </a>
+            <a class="contact__card glass" href="tel:+201098337611" data-animate>
+              <span class="contact__icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <h4>Phone Call</h4>
+                <p>+20 109 833 7611</p>
+              </div>
+            </a>
+            <a class="contact__card glass" href="https://www.linkedin.com/in/mahmoud-adel-8a7b25191/" target="_blank"
+              rel="noopener noreferrer" data-animate>
+              <span class="contact__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <div>
+                <h4>LinkedIn</h4>
+                <p>Connect with me professionally</p>
+              </div>
+            </a>
+            <div class="contact__card glass" data-animate>
+              <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <h4>Location</h4>
+                <p>Cairo, Egypt (Open to Remote Globally)</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form glass" id="contactForm" novalidate data-animate>
+            <h3>Send me a message</h3>
+            <p class="contact__form-sub">Have a project, a role or an idea? Tell me about it.</p>
+
+            <div class="field">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="email">Your Email *</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" placeholder="React Native role / Project inquiry"
+                required />
+              <small class="error"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
+              <small class="error"></small>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__brand-mark">MA</span>
+        <div>
+          <h4>Mahmoud Adel</h4>
+          <p>Frontend Developer — React.js &amp; React Native</p>
+        </div>
+      </div>
+
+      <nav class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/in/mahmoud-adel-8a7b25191/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://wa.me/201098337611" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:mrmahmoudadel1996@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+201098337611" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="assets/Mahmoud_Adel_CV.pdf" download aria-label="Download CV"><i class="fa-solid fa-file-arrow-down"></i></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Mahmoud Adel. All rights reserved.</p>
+      <p>Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
